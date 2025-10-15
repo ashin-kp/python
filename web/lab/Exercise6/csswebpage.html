@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="csswebpage.css">
+
+    <style>
+        a {
+            color: white;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 10px;
+        }
+
+        h1 {
+            color: rgb(255, 255, 255);
+            font-size: 40px;
+            text-align: left;
+            padding: 10px;
+        }
+
+        h2 {
+            color: rgb(220, 216, 216);
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            padding: 0px;
+            text-align: left;
+
+        }
+
+        .css {
+            margin-top: 100px;
+            margin-bottom: 80px;
+        }
+
+        table {
+            color: white;
+            font-size: 20px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            border-color: rgb(0, 0, 0);
+        }
+
+        #t1 {
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            border-color: rgb(0, 0, 0);
+        }
+
+        #two {
+            text-align: left;
+            margin-top: 100px;
+            margin-bottom: 80px;
+        }
+
+        ul {
+            color: white;
+            font-size: 20px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        section {
+            display: block;
+            height: 100vh;
+            margin: 50px auto;
+            margin-top: auto;
+            max-width: 800px;
+            text-align: left;
+        }
+
+
+
+        button {
+            gap: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(0, 0, 0);
+            height: 80px;
+            text-align: right;
+            padding: 20px 20px 10px 20px;
+            border: 0px solid black;
+            border-radius: 5px;
+        }
+
+        nav.n0 {
+
+            align-content: left;
+            color: blue;
+            margin-right: 20px;
+        }
+
+        nav.img {
+            position: relative;
+        }
+
+        #intro {
+            background-color: rgb(0, 0, 0);
+            border: 0px solid black;
+            border-radius: 5px;
+            padding: 0px 20px 10px 20px;
+            
+        }
+
+    </style>
+</head>
+
+<body class="center">
+    <nav>
+        <div>
+            <a class="'n0" href=""><img src="css-3.png" width="50px" height="50px"></a>
+        </div>
+        <div style="color: rgb(255, 255, 255);">
+            <a class='n1' href=''>LOG IN</a> <b>|</b>
+            <a class='n1' href=''>SIGN UP</a>
+        </div>
+    </nav>
+
+    <div id="intro">
+        <div>
+            <h1 id="top">Cascading Style Sheets [CSS]</h1>
+            <div id="t1">
+                <div class="cascade">
+                    <td>
+                        <p><b><u>Cascading Style Sheets</u></b> is a style sheet language used for specifying the
+                            presentation and styling
+                            of a document written in a markup language such as HTML or XML. CSS is a cornerstone
+                            technology of the World
+                            Wide Web, alongside HTML and JavaScript.CSS provides several methods to style paragraph
+                            elements (para tags) using different selectors.
+                         The most common approaches are using element selectors, class selectors, and ID selectors.
+                        Additionally, CSS offers advanced styling options for paragraphs. The text-transform property can change the case of text, such as converting text to uppercase, lowercase, or capitalizing the first letter of each word.
+                       The text-indent property can add an indent also be used to define reusable values, such as colors or spacing, which can be applied to paragraphs.
+                        </p>
+                    </td>
+                    <td>
+                        <div id="img">
+                            <img src="web.png" alt="styling" width="auto" height="300px">
+                        </div>
+                    </td>
+                </div>
+
+                <a href="#one"><button
+                        style="background-color:rgb(28, 26, 26);color:white ;padding: 10px; border-radius:10px;">CSS
+                        PROPERTIES</button></a>
+                <a href="#two"><button
+                        style="background-color:rgb(28, 26, 26); color:white; padding:10px; border-radius:10px;">CSS WEB
+                        SAFE
+                        FONTS</button></a>
+                <a href="#three"><button
+                        style="background-color:rgb(28, 26, 26); color:white; padding:10px; border-radius:10px;">CSS
+                        SELECTORS</button></a>
+
+                <br>
+            </div>
+            <section class="css" id="one">
+                <h2>CSS PROPERTIES</h2>
+                <table border="1">
+                    <b><em></em></b>
+                    <tr>
+                        <td>accent-color</td>
+                        <td>Specifies an accent color for user-interface controls</td>
+                    </tr>
+                    <tr>
+                        <td>align-content</td>
+                        <td>Aligns a flex container's lines within the flex container when there is extra space on the
+                            cross-axis</td>
+                    </tr>
+                    <tr>
+                        <td>align-items</td>
+                        <td>Aligns flex items of the current flex line within the flex container</td>
+                    </tr>
+                    <tr>
+                        <td>align-self</td>
+                        <td>Allows the default alignment (or the one specified by align-items) to be overridden for
+                            individual
+                            flex items</td>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <td>background-color</td>
+                        <td>Sets the background color of an element</td>
+
+                    </tr>
+                    <tr>
+                        <td>border</td>
+                        <td>Sets the border around an element</td>
+
+                    </tr>
+                    <tr>
+                        <td>border-radius</td>
+                        <td>Defines the radius of the element's corners</td>
+                    </tr>
+                    <tr>
+                        <td>display</td>
+                        <td>Specifies the display behavior (the type of rendering box) of an element</td>
+                    </tr>
+                </table>
+                <a href="#top">Back to top</a>
+            </section>
+            <section id="two">
+                <h2>CSS WEB SAFE FONTS</h2>
+                <p>Web-safe fonts are fonts that are likely to be installed on a wide variety of computer systems and
+                    devices.<br>
+
+                </p>
+                <ul type="circle">
+                    <li>Arial (sans-serif)</li>
+                    <li>Verdana (sans-serif)</li>
+                    <li>Tahoma (sans-serif)</li>
+                    <li>Trebuchet MS (sans-serif)</li>
+                    <li>Times New Roman (serif)</li>
+                    <li>Georgia (serif)</li>
+                    <li>Garamond (serif)</li>
+                    <li>Courier New (monospace)</li>
+                    <li>Brush Script MT (cursive)</li>
+                </ul>
+                <a href="#top">Back to top</a>
+            </section>
+
+            <section id="three">
+                <h1>CSS SELECTORS</h1>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>SELECTOR</th>
+                            <th>EXAMPLE</th>
+                            <th>EXAMPLE DESCRIPTION</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>element</td>
+                        <td>p</td>
+                        <td>Selects all para tag elements</td>
+                    </tr>
+                    <tr>
+                        <td>#id</td>
+                        <td>#firstname</td>
+                        <td>Selects the element with id="firstname"</td>
+                    </tr>
+                    <tr>
+                        <td>.class</td>
+                        <td>.intro
+                            p.intro</td>
+                        <td>Selects all elements with class="intro"
+                            Selects all para elements with class="intro"</td>
+                    </tr>
+                    <tr>
+                        <td>*</td>
+                        <td>*</td>
+                        <td>Selects all elements</td>
+                    </tr>
+
+                </table>
+                <a href="#top">Back to top</a>
+            </section>
+</body>
+</center>
+
+</html>

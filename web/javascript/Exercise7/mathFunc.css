@@ -1,0 +1,43 @@
+td,
+th {
+  padding: 1rem;
+  border: 1px solid black;
+
+}
+
+body {
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: 'poppins';
+}
+h2,h1 {
+    margin: 0;
+
+}
+table {
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  width: 600px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+input {
+    border-radius: 40px;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: 1fr 1fr;
+}
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: black;
+    background-color: aquamarine;
+    border-radius: 20px;
+}

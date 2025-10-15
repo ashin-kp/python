@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="abc"></p>
+</body>
+<script>
+  var d=new Date();
+  document.getElementById("abc").innerHTML=d;
+  var day=d.getDate();
+  document.writeln("Day="+day);
+  document.writeln("<br>");
+   var month=d.getMonth();
+  document.writeln("Month="+month);
+  document.writeln("<br>");
+   var year=d.getFullYear();
+  document.writeln("Year="+year);
+  document.writeln("<br>");
+  var c=new Date(2023,10,1);
+  document.writeln(c);
+</script>
+</html>

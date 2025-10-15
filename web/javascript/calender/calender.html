@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h2>Generate Calendar</h2>
+  Enter Year:
+  <input type="number" id="yearInput" placeholder="Enter year">
+  <br><br>
+  <!-- Enter month 1-12:
+  <input type="number" id="monthInput" placeholder="Enter month (1-12)">
+  <br><br>-->
+  <button onclick="generateCalendar()">Show Calendar</button>
+  <br>
+   <p id="abc" style="display: flex;gap:2rem;flex-wrap:wrap"></p> 
+</body>
+   <script>
+    function generateCalendar(){
+    year=document.getElementById("yearInput").value;
+    //month=document.getElementById("monthInput").value-1;
+    
+      if (year === "") {
+        alert("Please enter year!");
+        return;
+      }
+    const months = ['january','february','march','april','may','june','july','august','september','october','november','december'];
+    for(let j= 0;j<12;j++) {
+    let c = new Date(year,j,1); 
+    let d="<table border='1'><tr><td colspan=7 align='center'>"+months[j]+"</td></tr><tr><td>sun</td><td>mon</td><td>tue</td><td>wed</td><td>thu</td><td>fri</td><td>sat</td></tr><tr>";
+    var day=c.getDay();
+    for(var i=0;i<day;i++)
+    {
+        d+="<td></td>";
+    }
+    while(c.getMonth()===j)
+    {
+        d+="<td>"+c.getDate()+"</td>";
+        if(c.getDay()%7==6)
+    {
+        d+="</tr><tr>";
+    }
+    c.setDate(c.getDate()+1);
+    }
+    d+="</tr></table>";
+    document.getElementById("abc").innerHTML+=d;
+}
+    }
+
+    </script>
+
+</html>
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="abc"></p>
+    <script>
+       // let cars = ["BMW","FERRARI","PORCHE","HONDA"];
+        
+        //document.getElementById("abc").innerHTML = cars[1];
+        //document.getElementById("abc").innerHTML = cars.length;
+        //document.getElementById("abc").innerHTML = cars.sort();
+        const cars = new Array("BMW","FERRARI","PORCHE","HONDA");
+        cars.push("FORTUNER");
+        
+        text="<ul>"
+        for(var i=0;i<cars.length;i++)
+        {
+            text+="<li>"+cars[i]+"</li>";
+            //text+= `<li>${cars[i]}</li>`;
+        }
+      text+="</ul>";
+      //document.getElementById("abc").innerHTML= text;
+      //document.getElementById("abc").innerHTML= cars.join("+");
+      document.getElementById("abc").innerHTML=cars.pop(); ;
+
+    </script>
+</body>
+</html>
